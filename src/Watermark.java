@@ -4,9 +4,6 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
 import javax.imageio.ImageIO;
 
 public class Watermark {
@@ -40,7 +37,7 @@ public class Watermark {
 		try {
 			 waterMark = ImageIO.read(new File("pobrane.png"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+	
 			e.printStackTrace();
 		}
 		System.out.println(waterMark.getType());
@@ -56,7 +53,7 @@ public class Watermark {
 		try {
 			ImageIO.write(imageWithMark, "JPG", f);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+	
 			e.printStackTrace();
 		}
 		
